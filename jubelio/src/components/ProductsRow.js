@@ -12,7 +12,11 @@ export default ({ block, productSelect }) => {
       }}
     >
       {block.map((eachProduct, index) => (
-        <ProductCard product={eachProduct} productSelect={productSelect} />
+        <ProductCard
+          key={index}
+          product={eachProduct}
+          productSelect={productSelect}
+        />
       ))}
     </div>
   );
